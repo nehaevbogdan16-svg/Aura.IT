@@ -487,3 +487,89 @@ footer {
         width: 100%;
         border-radius: 10px;
     }
+@media (max-width: 900px) {
+
+  /* контейнеры */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* GRID → 1 колонка */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* кнопки */
+  .actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+}.burger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+  .header-nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(10,12,20,0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .header-nav.active {
+    display: flex;
+  }
+}@media (max-width: 900px) {
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .form-box {
+    padding: 20px;
+  }
+
+  .form-bottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}@media (max-width: 900px) {
+
+  .card {
+    padding: 16px;
+  }
+
+}
